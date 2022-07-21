@@ -51,7 +51,7 @@ const Carousel = () => {
         <div className="carousel-caption hidden md:block absolute text-start">
         <h5 className="text-3xl font-bold">NIKE VAPORMAX FLYKNIT</h5>
           <p>'WHITE PLATINUM'</p>
-          <button className="text-white bg-black rounded-full p-2 px-8 pt-2 hover:scale-x-105 hover:scale-y-105 mb-64 mt-5">SHOP NOW</button>
+          <button className="text-white bg-black rounded-md p-2 px-8 pt-2 hover:scale-x-105 hover:scale-y-105 mb-64 mt-5">SHOP NOW</button>
         </div>
       </div>
   
@@ -65,7 +65,7 @@ const Carousel = () => {
         <div className="carousel-caption hidden md:block absolute text-end">
           <h5 className="text-3xl font-bold">Nike Dunk</h5>
           <p>'PANDA'</p>
-          <button className="text-white bg-black rounded-full p-2 px-8 pt-2 hover:scale-x-105 hover:scale-y-105 mb-64 mt-5">SHOP NOW</button>
+          <button className="text-white bg-black rounded-md p-2 px-8 pt-2 hover:scale-x-105 hover:scale-y-105 mb-64 mt-5">SHOP NOW</button>
         </div>
       </div>
   
@@ -79,7 +79,7 @@ const Carousel = () => {
         <div className="carousel-caption hidden md:block absolute text-start">
           <h5 className="text-3xl font-bold">Nike KD 9</h5>
           <p>'BIRDS OF PARADISE'</p>
-          <button className="text-white bg-black rounded-full p-2 px-8 pt-2 hover:scale-x-105 hover:scale-y-105 mb-64 mt-5">SHOP NOW</button>
+          <button className="text-white bg-black rounded-md p-2 px-8 pt-2 hover:scale-x-105 hover:scale-y-105 mb-64 mt-5">SHOP NOW</button>
         </div>
       </div>
 
@@ -92,7 +92,7 @@ const Carousel = () => {
         <div className="carousel-caption hidden md:block absolute text-end">
           <h5 className="text-3xl font-bold">Nike Dunk</h5>
           <p>'PANDA'</p>
-          <button className="text-white bg-black rounded-full p-2 px-8 pt-2 hover:scale-x-105 hover:scale-y-105 mb-64 mt-5">SHOP NOW</button>
+          <button className="text-white bg-black rounded-md p-2 px-8 pt-2 hover:scale-x-105 hover:scale-y-105 mb-64 mt-5">SHOP NOW</button>
         </div>
       </div>
     </div>

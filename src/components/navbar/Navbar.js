@@ -1,56 +1,48 @@
 import React from 'react';
 import Logo from '../../img/LogoT.png';
-import './Navbar.css';
-import Script from './Script.js';
+
 
 
 const Navbar = () => {
+ 
   return (
-    <nav className ='relative container mx-auto p-6'>
-      <div className='flex items-center justify-between'>
-        <div className='pt-2'>
-          <img className="logo" src={Logo} width={50} height={50} alt='logo' />
-        </div>
-        <div className='hidden md:flex space-x-6'>
-          <a href="/#" className='hover:text-darkGrayishBlue'>Home</a>
-          <a href="/#" className='hover:text-darkGrayishBlue'>Sportswear</a>
-          <a href="/#" className='hover:text-darkGrayishBlue'>Footwear</a>
-          <a href="/#" className='hover:text-darkGrayishBlue'>Outfits</a>
-        </div>
-        <a className='hidden md:block hover:text-darkGrayishBlue p-2 px-6 pt-2 text-black border-2 border-gray-200
-         hover:drop-shadow-md transition ease-in-out delay-100 bg-white hover:-translate-y-1 hover:scale-110
-          hover:bg-white duration-200
-        rounded-full baseline'>
-          Log In
+    <div className="navbar bg-base-100 p-6 sticky top-0 z-50">
+  <div className="navbar-start">
+    <div className="dropdown">
+      <label tabindex="0" className="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+      </label>
+      <ul tabindex="0" className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Home</a></li>
+        <li tabindex="0">
+          <a className="justify-between">
+          Sportswear
+          </a>
+        </li>
+        <li><a>Footwear</a></li>
+        <li><a>Outfits</a></li>
+      </ul>
+    </div>
+    <img className="btn btn-ghost normal-case text-xl" src={Logo} width={100} height={100} alt='logo' />
+    
+  </div>
+  <div className="navbar-center hidden lg:flex">
+    <ul className="menu menu-horizontal p-0">
+      <li><a>Home</a></li>
+      <li tabindex="0">
+        <a>
+        Sportswear
         </a>
-        <button
-          id="menu-btn"
-          className="block hamburger md:hidden focus:outline-none"
-        >
-          <span className="hamburger-top"></span>
-          <span className="hamburger-middle"></span>
-          <span className="hamburger-bottom"></span>
-        </button>
-        </div>
-
-
-      <div className="md:hidden">
-        <div
-          id="menu"
-          className="z-50 rounded-xl absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-        >
-          <a href="/#" className='hover:text-darkGrayishBlue'>Home</a>
-          <a href="/#" className='hover:text-darkGrayishBlue'>Sportswear</a>
-          <a href="/#" className='hover:text-darkGrayishBlue'>Footwear</a>
-          <a href="/#" className='hover:text-darkGrayishBlue'>Outfits</a>
-      </div>
-      </div> 
-
-      <script src={Script}></script>
-      
-    </nav>
+      </li>
+      <li><a>Footwear</a></li>
+      <li><a>Outfits</a></li>
+    </ul>
+  </div>
+  <div className="navbar-end">
+    <a className="btn">Log In</a>
+  </div>
+</div>
   )
-  
 }
 
 export default Navbar
