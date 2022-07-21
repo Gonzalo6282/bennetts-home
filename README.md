@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Bennets Home Page
+[Live demo](http://bennetts-home.s3-website.eu-west-2.amazonaws.com/)
+
+Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
